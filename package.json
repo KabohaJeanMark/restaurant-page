@@ -4,7 +4,10 @@
   "description": "A project to use DOM manipulation and event handling to create a resturant page and bundle it up using webpack for a modern JavaScript touch.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
