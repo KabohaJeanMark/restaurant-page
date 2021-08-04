@@ -1,7 +1,7 @@
 import img from './assets/burger.jpg';
 
 const displayHome = (mainContent) => {
-  mainContent.textContent = '';
+  mainContent.innerHTML = '';
 
   const headLine = document.createElement('h1');
   headLine.textContent = "Moji's Amazing Burgers";

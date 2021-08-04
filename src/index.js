@@ -1,4 +1,5 @@
 import displayHome from './home';
+import showMenu from './menu';
 import './style.css';
 
 const bodyContent = document.getElementById('content');
@@ -16,19 +17,22 @@ spanBrand.textContent = "Moji's restaurant";
 const menuBtns = document.createElement('ul');
 menuBtns.className = 'navbar-nav';
 
-const homeBtn = document.createElement('li');
-homeBtn.classList.add('nav-link');
+const homeBtn = document.createElement('a');
+homeBtn.classList.add('nav-link', 'm-2', 'p-2');
 homeBtn.textContent = 'Home';
 homeBtn.addEventListener('click', () => {
   displayHome(mainContent);
 });
 
-const menuBtn = document.createElement('li');
-menuBtn.className = 'nav-link';
+const menuBtn = document.createElement('a');
+menuBtn.classList.add('nav-link', 'm-2', 'p-2');
 menuBtn.textContent = 'Menu';
+menuBtn.addEventListener('click', () => {
+  showMenu(mainContent);
+});
 
-const contactBtn = document.createElement('li');
-contactBtn.className = 'nav-link';
+const contactBtn = document.createElement('a');
+contactBtn.classList.add('nav-link', 'm-2', 'p-2');
 contactBtn.textContent = 'Contact';
 
 menuBtns.appendChild(homeBtn);
