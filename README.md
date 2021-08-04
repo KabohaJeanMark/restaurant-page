@@ -4,20 +4,16 @@
 > A website built using purely DOM manipulation and event handling to create a resturant page and bundle it up using Webpack for a Modern JavaScript touch. Webpack is used for Asset management of the images, pre-loading the CSS and bundling the different imported JavaScript modules.
 DOM scripting manipulates various elements and a user is able to view the home page, menu and contact pages all in a Single Page Application.
 
-### The 3 pages
+### The 3 tabs
 
 | ![landing](src/assets/landing.png) |![menu](src/assets/menu.png) | ![contact](src/assets/contact.png) | 
 |:---:|:---:|:---:|
-| Home Page | Menu Page | Contact Page |
+| Home Tab | Menu Tab | Contact Tab |
 
 ## Built With
 
 - HTML5 & CSS3, & JavaScript
 - Bootstrap
-
-## Live Demo
-
-[Live Demo Link](https://kabohajeanmark.github.io/restaurant-page/)
 
 ## Instructions
 To get a local copy up and running follow these simple example steps.
