@@ -1,9 +1,10 @@
 import displayHome from './home';
+import './style.css';
 
 const bodyContent = document.getElementById('content');
 
 const mainContent = document.createElement('div');
-mainContent.className = 'container';
+mainContent.classList.add('container', 'center');
 
 const navMenu = document.createElement('nav');
 navMenu.classList.add('navbar', 'navbar-expand-lg', 'navbar-dark', 'bg-primary');
