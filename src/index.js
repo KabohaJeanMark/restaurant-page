@@ -1,6 +1,9 @@
+import displayHome from './home';
+
 const bodyContent = document.getElementById('content');
 
-console.log("Hey there from cool restaurant");
+const mainContent = document.createElement('div');
+mainContent.className = 'container';
 
 const navMenu = document.createElement('nav');
 navMenu.classList.add('navbar', 'navbar-expand-lg', 'navbar-dark', 'bg-primary');
@@ -13,16 +16,19 @@ const menuBtns = document.createElement('ul');
 menuBtns.className = 'navbar-nav';
 
 const homeBtn = document.createElement('li');
-homeBtn.classList.add("nav-link");
-homeBtn.textContent = "Home";
+homeBtn.classList.add('nav-link');
+homeBtn.textContent = 'Home';
+homeBtn.addEventListener('click', () => {
+  displayHome(mainContent);
+});
 
 const menuBtn = document.createElement('li');
-menuBtn.className = "nav-link";
-menuBtn.textContent = "Menu";
+menuBtn.className = 'nav-link';
+menuBtn.textContent = 'Menu';
 
 const contactBtn = document.createElement('li');
-contactBtn.className = "nav-link";
-contactBtn.textContent = "Contact";
+contactBtn.className = 'nav-link';
+contactBtn.textContent = 'Contact';
 
 menuBtns.appendChild(homeBtn);
 menuBtns.appendChild(menuBtn);
@@ -32,3 +38,7 @@ navMenu.appendChild(spanBrand);
 navMenu.appendChild(menuBtns);
 
 bodyContent.appendChild(navMenu);
+
+bodyContent.appendChild(mainContent);
+
+displayHome(mainContent);
