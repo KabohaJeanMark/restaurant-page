@@ -11,7 +11,7 @@ const displayHome = (mainContent) => {
   burgerPic.src = img;
 
   const paraG = document.createElement('p');
-  paraG.textContent = 'The crunchiest fries you will ever have';
+  paraG.textContent = 'The crunchiest fries and juiciest burgers you will ever have';
 
   mainContent.appendChild(headLine);
   mainContent.appendChild(burgerPic);

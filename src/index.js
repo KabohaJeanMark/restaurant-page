@@ -1,5 +1,6 @@
 import displayHome from './home';
 import showMenu from './menu';
+import contactPage from './contact';
 import './style.css';
 
 const bodyContent = document.getElementById('content');
@@ -34,6 +35,9 @@ menuBtn.addEventListener('click', () => {
 const contactBtn = document.createElement('a');
 contactBtn.classList.add('nav-link', 'm-2', 'p-2');
 contactBtn.textContent = 'Contact';
+contactBtn.addEventListener('click', () => {
+  contactPage(mainContent);
+});
 
 menuBtns.appendChild(homeBtn);
 menuBtns.appendChild(menuBtn);
